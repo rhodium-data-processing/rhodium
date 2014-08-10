@@ -1,5 +1,5 @@
-#ifndef TABLE_H_INCLUDED
-#define TABLE_H_INCLUDED
+#ifndef TABLE_HPP_INCLUDED
+#define TABLE_HPP_INCLUDED
 
 #include <string>
 #include <vector>
@@ -22,4 +22,4 @@ public:
   DataObject& addDataObject();
 };
 
-#endif // ifndef TABLE_H_INCLUDED
+#endif // ifndef TABLE_HPP_INCLUDED

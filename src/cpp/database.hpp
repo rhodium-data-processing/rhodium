@@ -1,5 +1,5 @@
-#ifndef DATABASE_H_INCLUDED
-#define DATABASE_H_INCLUDED
+#ifndef DATABASE_HPP_INCLUDED
+#define DATABASE_HPP_INCLUDED
 
 #include <string>
 #include <vector>
@@ -10,7 +10,7 @@
 class Database
 {
 private:
-  vector<Table> tables;
+  std::vector<Table> tables;
 public:
   Database(std::string filename);
 
@@ -25,4 +25,4 @@ public:
   void close();
 };
 
-#endif // ifndef DATABASE_H_INCLUDED
+#endif // ifndef DATABASE_HPP_INCLUDED
