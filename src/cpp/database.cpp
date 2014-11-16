@@ -5,7 +5,7 @@ Database::Database(std::string filename)
   std::string ext = filename.substr(filename.find_last_of(".") + 1);
   if(ext != "rhd")
   {
-    // TODO raise an InvalidFileExtensionException
+    throw new InvalidFileTypeException(filename);
   }
   //
 }
@@ -40,7 +40,7 @@ Table& Database::getTable(std::string tableName)
 {
   if(!tableExists(tableName))
   {
-    // TODO raise a NoSuchTableException
+    throw new NoSuchTableException(tableName);
   }
   for(std::vector<Table>::iterator it = tables.begin(); it != tables.end(); ++it)
   {
